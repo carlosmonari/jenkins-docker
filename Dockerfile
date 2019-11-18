@@ -20,8 +20,9 @@ RUN \
     telnet \
     git \
     maven \
-    nodejs
-
+    npm \
+    node 
+    
 RUN \
   apt-get clean && \
   apt-get update && \
