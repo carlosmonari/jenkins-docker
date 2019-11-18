@@ -20,9 +20,7 @@ RUN \
     tcpdump \
     telnet \
     git \
-    maven \
-    npm \
-    node 
+    maven
     
 RUN \
   apt-get clean && \
