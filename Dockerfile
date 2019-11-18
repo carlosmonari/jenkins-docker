@@ -4,8 +4,9 @@ USER root
 
 # Node.js
 # We need to use a later version of Node than is currently available in the Ubuntu package manager (2015-06-17)
-RUN curl -sL https://deb.nodesource.com/setup | bash -
-
+# deprecated RUN curl -sL https://deb.nodesource.com/setup | bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+ 
 # Install git, maven, default-jdk, nodejs
 # The tar and bzip2 packages are required for Phantom.js installation in npm: https://github.com/Medium/phantomjs/issues/326
 RUN \
