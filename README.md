@@ -8,9 +8,9 @@ docker run -d \
   -p 8080:8080 \
   --restart=always \
   -v /home/ubuntu/jenkins:/var/jenkins_home \
-  --add-host docker:172.31.9.91 \ # Replace with your docker host IP address
+  --add-host docker:172.17.0.100 \ # Replace with your docker host IP address
   --name jenkins \
-  carboni/jenkins
+  carlosmonari/jenkins
 ```
 
  * runs a container;
