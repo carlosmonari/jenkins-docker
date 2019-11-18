@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Tag then existing version case "old"
-docker tag carboni.io/jenkins carboni.io/jenkins:old
+docker tag carlosmonari/jenkins carlosmonari/jenkins:old
 
 # Build then image
-docker build --no-cache --tag=carboni.io/jenkins .
-docker push carboni.io/jenkins
+docker build --no-cache --tag=carlosmonari/jenkins .
+docker push carlosmonari/jenkins
 
 # Delete the old image
-docker rmi carboni.io/jenkins:old
+docker rmi carlosmonari/jenkins:old
