@@ -46,6 +46,8 @@ RUN \
 # RUN wget -qO- https://get.docker.com/ | sh
 RUN usermod -aG docker jenkins
 
+RUN usermod -a -G group Jenkins
+
 USER jenkins
 
 # Add Git plugin
