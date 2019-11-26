@@ -20,7 +20,8 @@ RUN \
     tcpdump \
     telnet \
     git \
-    maven
+    maven \
+    ansible
     
 RUN \
   apt-get clean && \
