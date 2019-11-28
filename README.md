@@ -1,5 +1,5 @@
 # jenkins-docker
-Jenkins Docker image that adds installation of Git, Maven, Docker, default-jdk and Node.js, plus the Jenkins Git SCM and Docker build step plugins.
+Jenkins Docker image that adds installation of Git, Maven, Docker, Ansible, default-jdk and Node.js, plus the Jenkins Git SCM and Docker build step plugins.
 
 ## Run
 
