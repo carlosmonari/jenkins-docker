@@ -21,6 +21,7 @@ RUN \
     telnet \
     git \
     maven \
+    nodejs \
     ansible
     
 RUN \
