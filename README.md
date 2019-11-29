@@ -11,12 +11,14 @@ docker build . -t carlosmonari/jenkins-docker
 
 ```
 docker run -d \
-  -p 8080:8080 \
+  -u root -p 8080:8080 \
   --restart=always \
   -v /home/ubuntu/jenkins:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
   --add-host docker:172.17.0.100 \ # Replace with your docker host IP address
   --name jenkins \
-  carlosmonari/jenkins
+  carlosmonari/jenkins-docker  
+  
 ```
 
  * runs a container;
