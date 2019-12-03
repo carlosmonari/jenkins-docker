@@ -22,7 +22,8 @@ RUN \
     git \
     maven \
     nodejs \
-    ansible
+    ansible \
+    awscli
     
 RUN \
   apt-get clean && \
